@@ -13,7 +13,7 @@ Force Regenerate Thumbnails allows you to REALLY regenerate the thumbnails for y
 
 You can either regenerate the thumbnails for all image uploads, individual image uploads, or specific multiple image uploads.
 
-See the [screenshots tab](http://wordpress.org/extend/plugins/regenerate-thumbnails/screenshots/) for more details.
+See the [screenshots tab](http://wordpress.org/extend/plugins/force-regenerate-thumbnails/screenshots/) for more details.
 
 == Installation ==
 
