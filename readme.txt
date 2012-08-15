@@ -9,6 +9,8 @@ Based in Regenerate Thumbnails, REALLY force the regenerate thumbnail.
 
 == Description ==
 
+* Based in Regenerate Thumbnails. All credits and thanks to Viper007Bond
+
 Force Regenerate Thumbnails allows you to REALLY regenerate the thumbnails for your image attachments.
 
 You can either regenerate the thumbnails for all image uploads, individual image uploads, or specific multiple image uploads.
