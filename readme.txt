@@ -1,7 +1,7 @@
 === Force Regenerate Thumbnails ===
 Contributors: Pedro Elsner
 Requires at least: 2.8
-Tested up to: 3.3
+Tested up to: 3.4.1
 Stable tag: trunk
 Tags: force, regenerate thumbnails, thumbnail, thumbnails
 
