@@ -2,7 +2,7 @@
 Contributors: Pedro Elsner
 Requires at least: 2.8
 Tested up to: 3.4.2
-Stable tag: trunk
+Stable tag: 1.2
 Tags: force, regenerate thumbnails, thumbnail, thumbnails
 
 Delete and REALLY force the regenerate thumbnail.
