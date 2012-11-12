@@ -432,8 +432,26 @@ class ForceRegenerateThumbnails {
          * @since 1.1
          */
         $message = '';
-        $imagePath = substr($fullsizepath, 0, strlen($fullsizepath) - 4);
-        $imageFormat = substr($fullsizepath, -4);
+        
+        
+        /**
+         * Fix for format JPEG
+         * 12-11-2012 11h AM
+         */
+        $array_path = explode(DIRECTORY_SEPARATOR, $fullsizepath);
+        $array_file = explode('.', $array_path[count($array_path)-1]);
+        
+        $imageFormat = $array_file[count($array_file)-1];
+        
+        unset($array_path[count($array_path)-1]);
+        unset($array_file[count($array_file)-1]);
+        
+        $imagePath = implode(DIRECTORY_SEPARATOR, $array_path) . DIRECTORY_SEPARATOR . implode('.', $array_file);
+        
+        
+        /**
+         * Continue
+         */
         $dirPath = explode(DIRECTORY_SEPARATOR, $imagePath);
         $imageName = sprintf("%s-", $dirPath[count($dirPath)-1]);
         unset($dirPath[count($dirPath)-1]);
