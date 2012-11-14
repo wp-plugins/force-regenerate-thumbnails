@@ -3,7 +3,7 @@
 Plugin Name:  Force Regenerate Thumbnails
 Plugin URI:   http://pedroelsner.com/2012/08/forcando-a-atualizacao-de-thumbnails-no-wordpress
 Description:  Delete and REALLY force the regenerate thumbnail. Based in plugin: Regenerate Thumbnails - All credits and thanks to Viper007Bond
-Version:      1.2
+Version:      1.3
 Author:       Pedro Elsner
 Author URI:   http://www.pedroelsner.com/
 */
@@ -495,7 +495,7 @@ class ForceRegenerateThumbnails {
         
 		wp_update_attachment_metadata($image->ID, $metadata);
 		
-        $message = sprintf(__('<b>&quot;%1$s&quot; (ID %2$s): All thumbnails was successfully regenerated in %3$s seconds.</b>', 'force-regenerate-thumbnails') . $regenerate_status, esc_html(get_the_title($image->ID)), $image->ID, timer_stop()) . $message;
+        $message = sprintf(__('<b>&quot;%1$s&quot; (ID %2$s): All thumbnails was successfully regenerated in %3$s seconds.</b>', 'force-regenerate-thumbnails'), esc_html(get_the_title($image->ID)), $image->ID, timer_stop()) . $message;
 		die(json_encode(array('success' => $message)));
 	}
 

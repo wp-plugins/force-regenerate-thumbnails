@@ -29,6 +29,9 @@ See the [screenshots tab](http://wordpress.org/extend/plugins/force-regenerate-t
 
 == ChangeLog ==
 
+= 1.3 =
+* Fix message error when WP_DEBUG in wp_config.php
+
 = 1.2 =
 * Fix for JPEG images
 
