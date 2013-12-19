@@ -3,7 +3,7 @@
 Plugin Name:  Force Regenerate Thumbnails
 Plugin URI:   http://pedroelsner.com/2012/08/forcando-a-atualizacao-de-thumbnails-no-wordpress
 Description:  Delete and REALLY force the regenerate thumbnail. Based in plugin: Regenerate Thumbnails - All credits and thanks to Viper007Bond
-Version:      1.4
+Version:      1.5
 Author:       Pedro Elsner
 Author URI:   http://www.pedroelsner.com/
 */
@@ -267,9 +267,9 @@ class ForceRegenerateThumbnails {
 	<h3 class="title"><?php _e('Process Information', 'force-regenerate-thumbnails'); ?></h3>
 
 	<p>
-		<?php printf(__('Total Images: %s', 'force-regenerate-thumbnails'), $count); ?><br />
-		<?php printf(__('Successes:: %s', 'force-regenerate-thumbnails'), '<span id="regenthumbs-debug-successcount">0</span>'); ?><br />
-		<?php printf(__('Failures: %s', 'force-regenerate-thumbnails'), '<span id="regenthumbs-debug-failurecount">0</span>'); ?>
+		<?php printf(__('Total: %s', 'force-regenerate-thumbnails'), $count); ?><br />
+		<?php printf(__('Success: %s', 'force-regenerate-thumbnails'), '<span id="regenthumbs-debug-successcount">0</span>'); ?><br />
+		<?php printf(__('Failure: %s', 'force-regenerate-thumbnails'), '<span id="regenthumbs-debug-failurecount">0</span>'); ?>
 	</p>
 
 	<ol id="regenthumbs-debuglist">
