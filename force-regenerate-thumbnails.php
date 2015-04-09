@@ -4,7 +4,7 @@
 Plugin Name:  Force Regenerate Thumbnails
 Plugin URI:   http://pedroelsner.com/2012/08/forcando-a-atualizacao-de-thumbnails-no-wordpress
 Description:  Delete and REALLY force the regenerate thumbnail.
-Version:      2.0.4
+Version:      2.0.5
 Author:       Pedro Elsner
 Author URI:   http://www.pedroelsner.com/
 */
@@ -428,14 +428,14 @@ class ForceRegenerateThumbnails {
 	 */
 	function ajax_process_image() {
 
+		// No timeout limit
+		set_time_limit(0);
+	
 		// Don't break the JSON result
 		error_reporting(0);
 		$id = (int) $_REQUEST['id'];
 
 		try {
-            
-            // 5 minutes per image should be PLENTY
-			set_time_limit(900);
             
 			header('Content-type: application/json');
 			$image = get_post($id);

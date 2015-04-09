@@ -27,6 +27,9 @@ See the [screenshots tab](http://wordpress.org/extend/plugins/force-regenerate-t
 
 == ChangeLog ==
 
+= 2.0.5 =
+* No timeout limit
+
 = 2.0.4 =
 * Fix issue when "opendir()" return FALSE (thanks Krody Robert)
 
